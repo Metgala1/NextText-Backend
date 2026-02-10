@@ -1,26 +1,29 @@
 {
   "name": "nexttext-backend",
   "version": "1.0.0",
+  "description": "Simple Node.js messaging backend",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node index.js",
+    "prisma:push": "prisma db push",
+    "prisma:studio": "prisma studio"
   },
+  "author": "Metgala1",
+  "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Metgala1/NextText-Backend.git"
+    "url": "https://github.com/Metgala1/NextText-Backend.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Metgala1/NextText-Backend/issues"
   },
   "homepage": "https://github.com/Metgala1/NextText-Backend#readme",
-  "description": "",
   "dependencies": {
     "@prisma/client": "^5.22.0",
-    "dotenv": "^17.2.3",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
     "prisma": "^5.22.0"
   }
 }
