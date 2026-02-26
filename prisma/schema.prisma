@@ -22,6 +22,7 @@ model Conversation {
   id        Int      @id @default(autoincrement())
   user1Id   Int
   user2Id   Int
+  pairKey   String   @unique
   createdAt DateTime @default(now())
 
   user1 User @relation("User1", fields: [user1Id], references: [id])
